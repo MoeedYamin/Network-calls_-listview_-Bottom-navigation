@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigationBar"
+        tools:layout="@layout/fragment_fire_store" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingStart="@dimen/_20dp"
+        android:paddingEnd="@dimen/_20dp"
+        android:paddingTop="@dimen/_15dp"
+        android:paddingBottom="@dimen/_15dp"
+        android:elevation="@dimen/_10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+
+
+        <LinearLayout
+            android:id="@+id/fireStoreLayout"
+            android:background="@drawable/navigation_bar_icon_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_5dp"
+            android:paddingEnd="@dimen/_5dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/fireStoreImage"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/firestore"/>
+
+            <TextView
+                android:id="@+id/fireStoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fire_store"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/apiLayout"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_5dp"
+            android:paddingEnd="@dimen/_5dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/apiImage"
+                android:layout_width="@dimen/_22dp"
+                android:layout_height="@dimen/_27dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/api" />
+
+            <TextView
+                android:id="@+id/apiText"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/api"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/localDbLayout"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_5dp"
+            android:paddingEnd="@dimen/_5dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/localDbImage"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/local_db"/>
+
+            <TextView
+                android:id="@+id/localDbText"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/local_db"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="@dimen/_10dp"
+                android:textSize="@dimen/_16sp"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

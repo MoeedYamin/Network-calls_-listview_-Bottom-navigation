@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Task2_Network_Calls_ListViews_Bottom_Navigation_Fragment_Local_DBV_&amp;_ViewModel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+<!--XML-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fire_store">Firestore</string>
+    <string name="api">API</string>
+    <string name="local_db">Local DB</string>
+
+
+
+
+
+
+<!--Kotlin-->
+</resources>
