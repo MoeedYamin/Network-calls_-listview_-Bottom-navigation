@@ -1,14 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Fragments.FireStoreFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        tools:context=".Fragments.FireStoreFragment">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:gravity="center"
+            android:text="@string/firestore_database"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_36sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/fireStoreEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/rounded_edit_text"
+            android:drawableStart="@drawable/text"
+            android:drawablePadding="@dimen/_10dp"
+            android:hint="@string/enter_value"
+            android:padding="@dimen/_13dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/fireStoreErrorMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_27dp"
+            android:text="@string/field_is_required"
+            android:textColor="@color/red" />
+
+        <Button
+            android:id="@+id/doneButtonFireStore"
+            android:layout_width="@dimen/_100dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/done"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarFireStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:background="@drawable/white_prograssbar"
+            android:visibility="invisible" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:text="@string/your_data"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/noDataFoundFireStore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/no_data_found"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_30sp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fireStoreRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_nodes_firestore"
+            />
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="apiData"
+            type="com.example.task_2_network_calls_listviews_bottom_navigation_fragment_localdbv_viewmodel.fragment.retrofit_library.UserApi" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/clay"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:src="@{apiData.avatar}"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_100dp"
+                android:layout_margin="@dimen/_5dp" />
+
+            <TextView
+                android:id="@+id/apiNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10dp"
+                app:setTextToTextView="@{apiData}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,16 +1,25 @@
 <resources>
-    <string name="app_name">Task2_Network_Calls_ListViews_Bottom_Navigation_Fragment_Local_DBV_&amp;_ViewModel</string>
-    <!-- TODO: Remove or change this placeholder text -->
-<!--XML-->
+    <string name="app_name">Task_2_Network_Calls_ListViews_Bottom_Navigation_Fragment_Local DBV_ViewModel</string>
+    <!--XML-->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fire_store">Firestore</string>
     <string name="api">API</string>
     <string name="local_db">Local DB</string>
+    <string name="firestore_database">Firestore Database</string>
+    <string name="api_calling">API Calling</string>
+    <string name="room_database">Room Database</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="search">Search</string>
+    <string name="your_data">Your data:</string>
+    <string name="field_is_required">This field is required*</string>
+    <string name="done">Done</string>
+    <string name="no_data_found">No data found!</string>
 
 
 
 
 
 
-<!--Kotlin-->
+
+    <!--Kotlin-->
 </resources>

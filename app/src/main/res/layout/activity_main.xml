@@ -11,7 +11,7 @@
         android:id="@+id/SplashScreenImage"
         android:layout_width="@dimen/_250dp"
         android:layout_height="@dimen/_250dp"
-        android:src="@drawable/splasscreen1"
+        android:src="@drawable/splashscreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

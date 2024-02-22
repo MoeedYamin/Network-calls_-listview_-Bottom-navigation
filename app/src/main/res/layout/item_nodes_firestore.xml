@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="node"
+            type="com.example.task_2_network_calls_listviews_bottom_navigation_fragment_localdbv_viewmodel.fragment.fireStoreResources.Node" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5dp"
+        app:cardCornerRadius="@dimen/_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/clay"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fireStoreData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp"
+                android:text="ABC"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

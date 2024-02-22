@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Task2_Network_Calls_ListViews_Bottom_Navigation_Fragment_Local_DBV_&_ViewModel"
+rootProject.name = "Task_2_Network_Calls_ListViews_Bottom_Navigation_Fragment_Local DBV_ViewModel"
 include(":app")
  

@@ -27,6 +27,7 @@
     <dimen name="_250dp">250dp</dimen>
     <dimen name="_22dp">22dp</dimen>
     <dimen name="_27dp">27dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
 
     <!--Font Sizes-->
     <dimen name="_36sp">36sp</dimen>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "666675287781",
+    "project_id": "task2networkcallslistbottomnav",
+    "storage_bucket": "task2networkcallslistbottomnav.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666675287781:android:54bf1ef4d2b490cd59a60c",
+        "android_client_info": {
+          "package_name": "com.example.task_2_network_calls_listviews_bottom_navigation_fragment_localdbv_viewmodel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBKYXm_bMm8z7ABtUmJYTiUXHG3ghhg4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
